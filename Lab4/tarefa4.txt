@@ -1,0 +1,39 @@
+	Aluno: Luciano Gigantelli Zago
+	RA: 182835
+	
+	Laboratório 4 - Tarefa
+
+1) Saída:
+
+[Frodo Bolseiro (ID: edf24fe0-3ff5-4e3c-9309-0c3534a1a8ac)
+Custo de Mana: 2
+Ataque: 1
+Vida Atual: 1
+Vida Maxima: 1
+, Anel (ID: 2b572a3c-c6ba-48eb-aba0-705a0fe558cd)
+Custo de Mana: 3
+Aumento em Ataque: 2
+Aumento em Vida: 8
+, Machado (ID: 6fec04e3-a29a-4bc3-b3b7-5409ec9028ce)
+Custo de Mana: 4
+Dano: 7
+, Olho de Sauron (ID: 78c7334a-3814-4f3f-8f22-a4b69145d807)
+Custo de Mana: 10
+Dano: 3
+]
+
+2) Faz, pois os diferentes tipos de objeto instanciados herdam de "Carta" e, portanto, podem ser referenciados pelo tipo mãe.
+
+3) Não, pois o método usar herdado tem uma assinatura (parâmetros) diferente do implementado em "DanoArea". Sendo assim, ocorre uma sobrecarga do metodo "usar".
+
+4) Não, pois o atributo "nome" é private na classe "Carta". Sendo assim, não pode ser acessado diretamente pelas classes herdadas, a não ser que o atributo fosse protected.
+
+Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+	The field Carta.nome is not visible
+
+	at base.cartas.Lacaio.<init>(Lacaio.java:39)
+	at Main.main(Main.java:15)
+
+5) Seria possível chamá-lo caso o metodo não fosse sobreescrito nas classes herdadas. Esse método não deveria depender de objetos e poderia realizar somente operações em atributos de "Carta" e não nos atributos de classes herdadas.
+
+6) Essa herança possibilitou criarmos um baralho de cartas (através de uma ArrayList) com diferentes tipos de atributos, além de termos métodos em comum que realizam operações adaptadas à cada especialidade.

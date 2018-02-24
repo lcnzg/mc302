@@ -1,0 +1,14 @@
+Luciano Gigantelli Zago - 182835
+
+Por que é possível criar um baralho de cartas de diferentes classes (Lacaio, Buff, etc.)? Quando usamos o método usar dos respectivos objetos destas classes, qual implementação é utilizada?
+É possivel criar baralhos de diferentes classes pois todas essas classes herdam da classe Carta, e o baralho é uma ArrayList de Carta. (polimorfismo)
+Quando usamos o metodo usar, a implementacao usada é a implementacao sobreescrita da instanciacao do objeto.
+
+Qual a relação (associação, agregação, composição) entre as classes Mesa e Carta? Por que?
+A relacao existente entre essas classes é a de Associação. Pois a Mesa tem ArrayLists de Carta.
+
+Qual a relação (associação, agregação, composição) entre as classes ProcessadorJogada e Mesa? Por que?
+A relacao existente entre essas classes é a de Composição. Pois a ProcessadorJogada é parte de Mesa, e seu uso depende da existencia de Mesa.
+
+As constantes da classe Util nunca são alteradas durante a execução do programa. Qual palavra chave da linguagem Java podemos usar para indicar que elas nunca serão alteradas?
+A palavra chave que indica que atributos nao sao alterados durante a execucao do programa é "final".

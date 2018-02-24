@@ -1,0 +1,29 @@
+	Aluno: Luciano Gigantelli Zago
+	RA: 182835
+	
+	Laboratório 5 - Tarefa
+1)
+
+Taxa de vitórias:
+JogA wins: 5943
+JogB wins: 4057
+
+Em que JogA foi a classe criada por mim, obtendo 59,4% de vitórias.
+
+
+2)
+
+Taxa de vitórias:
+JogA wins: 6467
+JogB wins: 3533
+
+Em que JogA foi a classe criada por mim, obtendo 64,7% de vitórias. Aumento de 5,3%.
+
+Mudanças:
+Mantive as regras iniciais, porém melhorei a escolha das cartas para utilizar em cada rodada.
+
+Priorizei a escolha de 1 carta de magia de dano em área, dentre a mana disponível na rodada. Se não comprasse, tentaria 1 carta de buff, no lacaio com menor vida. Se não, 1 carta de dano direto no herói.
+Após isso, tentaria comprar 1 carta de lacaio, escolhendo dentre a mana disponivel, o lacaio com mais vida.
+Após isso atacava com todos os lacaios não baixados na rodada atual.
+
+

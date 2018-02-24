@@ -1,0 +1,28 @@
+Aluno: Luciano Gigantelli Zago - RA:182835
+
+1) "Exception in thread "main" java.lang.NullPointerException
+	at base.service.impl.CartaServiceImpl.randInt(CartaServiceImpl.java:85)
+	at base.service.impl.CartaServiceImpl.geraCartaAleatoria(CartaServiceImpl.java:47)
+	at base.service.impl.BaralhoServiceImpl.preencheAleatorio(BaralhoServiceImpl.java:41)
+	at base.controle.Controle.executa(Controle.java:43)
+	at Main.main(Main.java:7)"
+
+Para analisar o erro, deve-se verificar a pilha de erros e verificar de baixo pra cima, o o que ocasionou o erro, e no começo da pilha, o erro final gerado. No caso, a exceção foi "NullPointerException", no metodo randInt.
+
+2) "base.exception.BaralhoVazioException: Baralho Vazio"
+
+3) "base.exception.MesaNulaException: Mesa Nula"
+
+A diferença encontrada foi a necessidade de tratar a excecao, pois ela extende de "Exception", que é uma excecao checked. Por isso, foi necessario utilizar "throws MesaNulaException" no metodo, para delegar o tratamento para a funcao "Controle".
+
+4) É preferivel que se use excecoes ja implementadas, pois "IllegalArgumentException" trata exatamente de erros relaconados a parametros nulos, o que é o caso da mesa nula. Reutilizar a excecao padrao deixa o codigo padronizado. Para criar uma nova excecao, ela deve ser especifica o suficiente para resolver o problema, e nao ter uma mesma funcao de outra ja existente.
+
+5) "base.exception.ValorInvalidoException: MaoP com tamanho 2"
+
+6) "base.exception.ValorInvalidoException: MaoP com tamanho 2
+
+Partida encerrada"
+
+Devemos inserir essa impressao no bloco "finally", apos o "try" e "catch"
+
+7) E uma ma pratica pois a classe principal "Exception" no "catch" e utilizada para generalizar as excecoes. Uma boa pratica seria especificar as possiveis excecoes que devem ser tratadas em diferentes blocos "catch", para trata-las cada uma de uma forma diferente. No caso nao ocorre propriamente um tratamento dos erros, somente a exibicao da mensagem sobre o erro.

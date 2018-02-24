@@ -1,0 +1,21 @@
+Luciano Gigantelli Zago - 182835
+
+-Tendo em vista que não faz sentido que as classes Carta e Magia sejam instanciadas. Como podemos garantir que ambas nunca serão instanciadas?
+Para garantir que as classes não possam ser instanciadas, utilizamos classes abstratas.
+
+
+-Como podemos obrigar que as classes que herdam da classe Carta implementem o método usar(Carta)? Faça as alterações no seu código. Quais as consequências dessa alteração?
+Para obrigar a implementacao desse metodo, devemos declara-lo como um metodo abstrato da classe abstrata "Carta". Como consequencia, caso usar seja o unico metodo abstrado a ser implementado, ou se todos os metodos abstratos forem implementados, a classe sera concreta e podera ser instanciada. Se algum dos metodos abstratos nao forem implementado, a classe ainda sera abstrata, como no caso da classe "Magia".
+
+
+-Qual a vantagem dos controladores conhecerem apenas as interfaces dos serviços?
+Conhecer somente a interface permite que exista uma padronizacao dos metodos dos servicos, o que facilita na utilizacao de diferentes instanciacoes desses servicos. Ou seja, os servicos podem realizar as mesmas funcoes de formas diferentes sem necessitar de uma mudanca nos controladores.
+
+
+-Caso queira criar uma nova estratégia de jogada, além da agressiva, como você procederia? Como o uso de Interfaces garante que sua nova estratégia será executada no controlador?
+Criaria um novo metodo que implementa "JogadaService", em "base.service.impl" e depois o instanciaria e o utilizaria na classe "Controle".
+O uso de interfaces permite que haja uma padronizacao dos metodos implementados de "JogadaService", dessa forma, a nova classe e obrigada a implementar os metodos determinados na interface e que serao usados pelos controladores.
+
+
+-Com relação às classes internas, utilizadas em JogadaServiceAgressivaImpl, qual a vantagem desse tipo de abordagem?
+Elas permitiram criar classes que implementam um Comparator de objetos quaisquer, que podem ser usados em funcoes que necessitam comparar objetos atraves de uma determinada escolha. Elas foram feitas classes internas pois serao somente utilizadas dentro da classe externa e, portanto, sao dependentes do objeto da classe externa.

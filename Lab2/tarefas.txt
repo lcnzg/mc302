@@ -1,0 +1,107 @@
+Aluno: Luciano Gigantelli Zago - RA: 182835  Turma: MC302 C
+
+
+*Tarefa 1
+Lacaio 4:
+Joao (ID: 6)
+Ataque = 0
+Vida Atual = 0
+Vida Maxima = 0
+Custo de Mana = 36
+
+Os unicos atributos inicializados pelo construtor reduzido foram o ID, Nome e Mana.
+Os demais atributos não inicializados estão zerados, pois em Java as variáveis não iniciadas sempre são zeradas e não imprimem lixo.
+
+
+
+
+*Tarefa 2
+Lacaio 1:
+Frodo Bolseiro (ID: 1)
+Ataque = 8
+Vida Atual = 1
+Vida Maxima = 1
+Custo de Mana = 1
+
+
+
+
+*Tarefa 3
+CartaMagia@15db9742
+
+O metodo toString padrão imprime o nome da classe e a localização do objeto na memoria
+
+
+
+
+*Tarefa 4
+Lacaio 2:
+Aragorn (ID: 2)
+Ataque = 5
+Vida Atual = 7
+Vida Maxima = 7
+Custo de Mana = 6
+
+Lacaio 5:
+Aragorn (ID: 2)
+Ataque = 5
+Vida Atual = 7
+Vida Maxima = 7
+Custo de Mana = 6
+
+Não há diferença entre o conteudo dos 2 objetos, porem por se tratar de uma copia, eles estao em partes diferentes da memoria.
+
+
+
+
+
+*Tarefa 5
+
+- Public
+You shall not pass
+You shall not pass
+
+- Private
+Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+	The field CartaMagia.nome is not visible
+
+	at Main.main(Main.java:41)
+	
+	
+Acontece um erro de compilação pois o programa tenta acessar uma area de memoria privada.
+O objetivo de utilizarmos os atributos privados é proteger partes do nosso código e torná-los códigos modulares.
+Os metodos get e set ajudam a alterar os atributos, sendo privados ou nao, pois padronizam a forma de programacao em Java.
+
+
+
+
+*Tarefa 6
+Lacaio 1:
+Frodo Bolseiro (ID: 1)
+Ataque = 2
+Vida Atual = 1
+Vida Maxima = 1
+Custo de Mana = 1
+
+Lacaio 1:
+Frodo Bolseiro Buffed (ID: 1)
+Ataque = 4
+Vida Atual = 3
+Vida Maxima = 1
+Custo de Mana = 1
+
+Lacaio 2:
+Aragorn Buffed (ID: 2)
+Ataque = 5
+Vida Atual = 8
+Vida Maxima = 7
+Custo de Mana = 6
+
+Lacaio 3:
+Legolas Buffed (ID: 3)
+Ataque = 12
+Vida Atual = 9
+Vida Maxima = 4
+Custo de Mana = 6
+
+

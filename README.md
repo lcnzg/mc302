@@ -1,5 +1,7 @@
 # MC302 - Programação Orientada a Objetos
  Laboratórios da disciplina MC302, UNICAMP, 2017-2
+ 
+ Professora: Esther Luna Colombini
 
 A estrutura do repositório segue o esquema a seguir: Cada laboratório/trabalho é separado em pastas com sua numeração (ex: Lab4/T1)
 

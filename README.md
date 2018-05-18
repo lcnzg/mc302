@@ -1,5 +1,5 @@
 # MC302 - Programação Orientada a Objetos
- Laboratórios da disciplina MC302, UNICAMP, 2017-2
+ Laboratórios da disciplina MC302, UNICAMP, 2017-1
  
  Professora: Esther Luna Colombini
 
